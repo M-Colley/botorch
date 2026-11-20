@@ -211,6 +211,11 @@ Proximal Acquisition Function Wrapper
 .. automodule:: botorch.acquisition.proximal
     :members:
 
+Transition-Cost Acquisition Function Wrapper
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. automodule:: botorch.acquisition.transition_cost
+    :members:
+
 Factory Functions for Acquisition Functions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. automodule:: botorch.acquisition.factory
