@@ -97,6 +97,10 @@ if TYPE_CHECKING:
         PriorGuidedAcquisitionFunction,
     )
     from botorch.acquisition.proximal import ProximalAcquisitionFunction  # noqa: F401
+    from botorch.acquisition.transition_cost import (  # noqa: F401
+        TransitionCostAcquisitionFunction,
+        TransitionCostModel,
+    )
 
 _LAZY_IMPORTS: dict[str, tuple[str, str]] = {
     "AcquisitionFunction": (".acquisition", "AcquisitionFunction"),
@@ -196,6 +200,11 @@ _LAZY_IMPORTS: dict[str, tuple[str, str]] = {
         "PriorGuidedAcquisitionFunction",
     ),
     "ProximalAcquisitionFunction": (".proximal", "ProximalAcquisitionFunction"),
+    "TransitionCostAcquisitionFunction": (
+        ".transition_cost",
+        "TransitionCostAcquisitionFunction",
+    ),
+    "TransitionCostModel": (".transition_cost", "TransitionCostModel"),
 }
 
 __all__ = list(_LAZY_IMPORTS.keys())
