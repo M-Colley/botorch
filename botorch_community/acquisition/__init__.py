@@ -22,10 +22,16 @@ from botorch_community.acquisition.rei import (
     qLogRegionalExpectedImprovement,
 )
 from botorch_community.acquisition.scorebo import qSelfCorrectingBayesianOptimization
+from botorch_community.acquisition.transition_constrained_mdp import (
+    PolicyMixture,
+    TransitionConstrainedMDPBO,
+    TransitionMDP,
+)
 
 __all__ = [
     "LocalEntropySearch",
     "LogRegionalExpectedImprovement",
+    "PolicyMixture",
     "qAlphaEntropySearch",
     "qBayesianQueryByComittee",
     "qBayesianVarianceReduction",
@@ -34,4 +40,6 @@ __all__ = [
     "qLogRegionalExpectedImprovement",
     "qSelfCorrectingBayesianOptimization",
     "qStatisticalDistanceActiveLearning",
+    "TransitionConstrainedMDPBO",
+    "TransitionMDP",
 ]
