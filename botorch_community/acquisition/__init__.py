@@ -17,6 +17,13 @@ from botorch_community.acquisition.input_constructors import (  # noqa F401
     acqf_input_constructor,
 )
 from botorch_community.acquisition.local_entropy_search import LocalEntropySearch
+from botorch_community.acquisition.lsr_bo import (
+    compute_local_box_bounds,
+    LocalSearchRolloutAcquisitionFunction,
+    LSRBO,
+    optimize_lsr_bo_step,
+    project_to_local_region,
+)
 from botorch_community.acquisition.rei import (
     LogRegionalExpectedImprovement,
     qLogRegionalExpectedImprovement,
@@ -24,8 +31,13 @@ from botorch_community.acquisition.rei import (
 from botorch_community.acquisition.scorebo import qSelfCorrectingBayesianOptimization
 
 __all__ = [
+    "compute_local_box_bounds",
     "LocalEntropySearch",
+    "LocalSearchRolloutAcquisitionFunction",
     "LogRegionalExpectedImprovement",
+    "LSRBO",
+    "optimize_lsr_bo_step",
+    "project_to_local_region",
     "qAlphaEntropySearch",
     "qBayesianQueryByComittee",
     "qBayesianVarianceReduction",
