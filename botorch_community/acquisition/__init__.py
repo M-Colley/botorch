@@ -22,8 +22,15 @@ from botorch_community.acquisition.rei import (
     qLogRegionalExpectedImprovement,
 )
 from botorch_community.acquisition.scorebo import qSelfCorrectingBayesianOptimization
+from botorch_community.acquisition.snake import (
+    apply_epsilon_point_deletion,
+    sample_thompson_optima,
+    SnAKe,
+    solve_open_tsp_path,
+)
 
 __all__ = [
+    "apply_epsilon_point_deletion",
     "LocalEntropySearch",
     "LogRegionalExpectedImprovement",
     "qAlphaEntropySearch",
@@ -34,4 +41,7 @@ __all__ = [
     "qLogRegionalExpectedImprovement",
     "qSelfCorrectingBayesianOptimization",
     "qStatisticalDistanceActiveLearning",
+    "sample_thompson_optima",
+    "SnAKe",
+    "solve_open_tsp_path",
 ]
