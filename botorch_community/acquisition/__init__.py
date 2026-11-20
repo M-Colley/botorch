@@ -21,6 +21,7 @@ from botorch_community.acquisition.rei import (
     LogRegionalExpectedImprovement,
     qLogRegionalExpectedImprovement,
 )
+from botorch_community.acquisition.safeopt import SafeOpt, SafeOptSets
 from botorch_community.acquisition.scorebo import qSelfCorrectingBayesianOptimization
 
 __all__ = [
@@ -34,4 +35,6 @@ __all__ = [
     "qLogRegionalExpectedImprovement",
     "qSelfCorrectingBayesianOptimization",
     "qStatisticalDistanceActiveLearning",
+    "SafeOpt",
+    "SafeOptSets",
 ]
