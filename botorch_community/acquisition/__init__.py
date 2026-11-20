@@ -17,6 +17,12 @@ from botorch_community.acquisition.input_constructors import (  # noqa F401
     acqf_input_constructor,
 )
 from botorch_community.acquisition.local_entropy_search import LocalEntropySearch
+from botorch_community.acquisition.mongoose import (
+    meta_train_mongoose,
+    MongooseOptimizer,
+    MongoosePolicy,
+    sample_gp_prior_paths,
+)
 from botorch_community.acquisition.rei import (
     LogRegionalExpectedImprovement,
     qLogRegionalExpectedImprovement,
@@ -26,6 +32,9 @@ from botorch_community.acquisition.scorebo import qSelfCorrectingBayesianOptimiz
 __all__ = [
     "LocalEntropySearch",
     "LogRegionalExpectedImprovement",
+    "meta_train_mongoose",
+    "MongooseOptimizer",
+    "MongoosePolicy",
     "qAlphaEntropySearch",
     "qBayesianQueryByComittee",
     "qBayesianVarianceReduction",
@@ -34,4 +43,5 @@ __all__ = [
     "qLogRegionalExpectedImprovement",
     "qSelfCorrectingBayesianOptimization",
     "qStatisticalDistanceActiveLearning",
+    "sample_gp_prior_paths",
 ]
