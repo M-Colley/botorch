@@ -19,6 +19,14 @@ if TYPE_CHECKING:
         get_objective_weights_transform,
     )
     from botorch.utils.rounding import approximate_round  # noqa: F401
+    from botorch.utils.run_order import (  # noqa: F401
+        compute_transition_distance_matrix,
+        draw_ordered_sobol_samples,
+        hilbert_index,
+        order_samples,
+        order_samples_hilbert,
+        order_samples_tsp,
+    )
     from botorch.utils.sampling import (  # noqa: F401
         batched_multinomial,
         draw_sobol_normal_samples,
@@ -43,6 +51,15 @@ _LAZY_IMPORTS: dict[str, tuple[str, str]] = {
         "get_objective_weights_transform",
     ),
     "approximate_round": (".rounding", "approximate_round"),
+    "compute_transition_distance_matrix": (
+        ".run_order",
+        "compute_transition_distance_matrix",
+    ),
+    "draw_ordered_sobol_samples": (".run_order", "draw_ordered_sobol_samples"),
+    "hilbert_index": (".run_order", "hilbert_index"),
+    "order_samples": (".run_order", "order_samples"),
+    "order_samples_hilbert": (".run_order", "order_samples_hilbert"),
+    "order_samples_tsp": (".run_order", "order_samples_tsp"),
     "batched_multinomial": (".sampling", "batched_multinomial"),
     "draw_sobol_normal_samples": (".sampling", "draw_sobol_normal_samples"),
     "draw_sobol_samples": (".sampling", "draw_sobol_samples"),

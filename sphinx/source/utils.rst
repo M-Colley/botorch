@@ -57,6 +57,11 @@ Rounding
 .. automodule:: botorch.utils.rounding
 		:members:
 
+Run-Order Optimization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. automodule:: botorch.utils.run_order
+		:members:
+
 Sampling
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. automodule:: botorch.utils.sampling
